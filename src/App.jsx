@@ -1,20 +1,17 @@
-
-import React from 'react';
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
-
-import PrincipalPage from './views/PrincipalPage'; // Importa tu componente Home
-import ContactPage from './views/ContactPage'; // Importa tu componente About
+import "./app.scss"
 
 const App = () => {
   return (
-    <BrowserRouter>
-     <Routes>
-        <Route exact path="/" element={<PrincipalPage/>} />
-        <Route path="/about" element={<ContactPage/>} />
-     </Routes>
-    </BrowserRouter>
-
-  );
+  <div>
+    <section>Hero</section>
+    <section>Parallax</section>
+    <section>Services</section>
+    <section>Portfolio1</section>
+    <section>Portfolio2</section>
+    <section>Portfolio3</section>
+    <section>Contact</section>
+  </div>
+  )
 };
 
 export default App;
