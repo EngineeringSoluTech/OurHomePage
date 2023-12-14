@@ -6,15 +6,15 @@ const App = () => {
 
   return (
   <div>
-    <section>
+    <section id="Homepage">
       <NavBar/>
     </section>
-    <section>Parallax</section>
-    <section>Services</section>
-    <section>Portfolio1</section>
-    <section>Portfolio2</section>
-    <section>Portfolio3</section>
-    <section>Contact</section>
+    <section id="Services">Parallax</section>
+    <section >Services</section>
+    <section id="Portfolio1">Portfolio1</section>
+    <section id="Portfolio2">Portfolio2</section>
+    <section id="Portfolio3">Portfolio3</section>
+    <section id="About">Contact</section>
     {/* <Test/> */}
   </div>
   )

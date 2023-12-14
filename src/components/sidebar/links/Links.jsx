@@ -1,9 +1,24 @@
 import React from 'react'
 
-function Links() {
+const Links=()=> {
+
+  const items = [
+    "Homepage",
+    "Services",
+    "Portfolia",
+    "Contact",
+    "About",
+  ]
+
   return (
-    <div>
-      
+    <div className='links'>
+      {
+        items.map(item => (
+          <a href={`#${item}`} key={item}>
+            {item}
+          </a>
+        ))
+      }
     </div>
   )
 }
