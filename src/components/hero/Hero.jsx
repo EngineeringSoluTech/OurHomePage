@@ -64,7 +64,7 @@ function Hero() {
      Write Us for your services
     </motion.div>
     <div className="imageContainer">
-      <img src="/hero.png" alt=''/>
+      <img src="/foto.png" alt=''/>
     </div>
     </div>
   )
