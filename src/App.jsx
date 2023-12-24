@@ -4,6 +4,7 @@ import Hero from "./components/hero/Hero";
 import NavBar from "./components/navbar/NavBar";
 import Parallax from "./components/parallax/Parallax";
 import Services from "./components/services/Services";
+import End from "./components/end/End";
 
 const App = () => {
 
@@ -26,6 +27,7 @@ const App = () => {
     <section id="Portfolio2">Portfolio2</section>
     <section id="Portfolio3">Portfolio3</section>
     <section id="About">Contact</section>
+    <section id="End"><End/></section>
     {/* <Test/> */}
   </div>
   )
