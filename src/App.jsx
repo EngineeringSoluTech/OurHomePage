@@ -1,3 +1,8 @@
+
+import React, { useEffect } from 'react';
+import {motion} from 'framer-motion'
+import { useInView } from 'react-intersection-observer';
+
 import Test from "./Test";
 import "./app.scss"
 import Hero from "./components/hero/Hero";
@@ -16,7 +21,9 @@ const App = () => {
       <NavBar/>
       <Hero/>
     </section>
-    <section id="Services">
+    <section 
+     id="Services"
+    >
       <Parallax type="services"/>
     </section>
     <section >
@@ -31,9 +38,9 @@ const App = () => {
     <section id="About">
       <Contact/>
     </section>
-    <section id="End">
+    {/* <section id="End">
       <End/>
-    </section>
+    </section> */}
     {/* <Test/> */}
   </div>
   )

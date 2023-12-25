@@ -107,11 +107,11 @@ function Hero() {
 
   return (
     <div className='hero'>
-     <motion.div
+     {/* <motion.div
         className='cursor'
         variants={mouseVariants}
         animate={cursorVariant}
-      />
+      /> */}
      <div className="wrapper">
       <motion.div 
          className="textContainer" 

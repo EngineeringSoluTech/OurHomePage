@@ -37,7 +37,7 @@ const Single =({item}) => {
        // offset:["end end", "end start"]
      });
 
-     const y = useTransform(scrollYProgress, [0,1], [-300, 300])
+     const y = useTransform(scrollYProgress, [0,1], [-400, 400])
 
     return(
         <section >
@@ -68,7 +68,7 @@ const Portfolio = () => {
 
  const scaleX = useSpring (scrollYProgress,{
     stiffness: 100,
-    damping: 30,
+    damping: 10,
  })  
 
   return (
