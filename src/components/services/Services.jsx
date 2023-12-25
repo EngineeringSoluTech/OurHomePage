@@ -38,7 +38,7 @@ function Services() {
       <motion.div className="textContainer"  variants={variants}>
         <p> 
             EngineeringSoluTech Engineers
-            <br/> and move forward
+            <br/> Offers solutions for you
         </p>
         <hr/>
       </motion.div>
@@ -51,18 +51,26 @@ function Services() {
         </div>
         <div className="title">
           <h1>
-            <b>For Your</b> Bussines.
+            <motion.b 
+             whileHover={{
+              color:"orange", 
+              cursor:"move", 
+              textShadow: '0 0 5px red, 0 0 10px red, 0 0 15px red',
+              }}>For Your
+            </motion.b> Bussines.
           </h1>
-          <motion.button whileTap={{scale:0.8}}>
+          <motion.button whileTap={{scale:0.95}} whileHover={{scale:1.05}}>
             What We Do ?
           </motion.button>
         </div>
       </motion.div>
       <motion.div className="listContainer"  variants={variants}>
-        <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
-          <h2>Branding</h2>
+        <motion.div className="box" 
+          whileHover={{background:"lightgray", color:"black"}}
+          >
+          <h2>Solutions</h2>
           <p>
-           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took .
+           Ofrecemos soluciones prácticas para tu negocio, proporcionando interfaces de usuarios interactivas y muy eficientes.
           </p>
           <motion.button whileTap={{scale:0.8, borderRadius:"10px"}}>
             Go
@@ -78,7 +86,7 @@ function Services() {
           </motion.button>
         </motion.div>
         <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
-          <h2>Branding</h2>
+          <h2>Innovation</h2>
           <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took .
           </p>

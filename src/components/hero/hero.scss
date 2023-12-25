@@ -30,10 +30,12 @@
          gap: 40px;
 
          h2{
-            font-size: 30px;
-            color: rebeccapurple;
-            letter-spacing: 10px;
-            user-select: none;
+             
+             span{
+                font-size: 35px;
+                letter-spacing: 10px;
+                user-select: none;
+            }
          }
 
          h1{
