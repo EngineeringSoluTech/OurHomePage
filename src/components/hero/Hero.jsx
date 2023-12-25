@@ -73,10 +73,10 @@ function Hero() {
          animate="animate"
          >
         <motion.h2 variants={textVariants} style={{cursor:"pointer"}}  
-         whileHover={{ scale: 1.1 }}
+         whileHover={{ scale: 1.03 }}
          onHoverStart={e => {}}
          onHoverEnd={e => {}}
-         whileTap={{ scale: 0.8 }}
+         whileTap={{ scale: 0.88 }}
         >EngineeringSoluTech</motion.h2>
         <motion.h1 variants={textVariants}>WEB DEVELOPMENT and engineering SERVICES</motion.h1>
         <motion.div  variants={textVariants} className="buttons">

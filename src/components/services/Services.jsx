@@ -53,9 +53,9 @@ function Services() {
           <h1>
             <b>For Your</b> Bussines.
           </h1>
-          <button>
+          <motion.button whileTap={{scale:0.8}}>
             What We Do ?
-          </button>
+          </motion.button>
         </div>
       </motion.div>
       <motion.div className="listContainer"  variants={variants}>
@@ -64,36 +64,36 @@ function Services() {
           <p>
            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took .
           </p>
-          <button>
+          <motion.button whileTap={{scale:0.8, borderRadius:"10px"}}>
             Go
-          </button>
+          </motion.button>
         </motion.div>
         <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
           <h2>Branding</h2>
           <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took .
           </p>
-          <button>
+          <motion.button whileTap={{scale:0.8, borderRadius:"10px"}}>
             Go
-          </button>
+          </motion.button>
         </motion.div>
         <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
           <h2>Branding</h2>
           <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took .
           </p>
-          <button>
+          <motion.button whileTap={{scale:0.8, borderRadius:"10px"}}>
             Go
-          </button>
+          </motion.button>
         </motion.div>
         <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
           <h2>Branding</h2>
           <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took .
           </p>
-          <button>
+          <motion.button whileTap={{scale:0.8, borderRadius:"10px"}}>
             Go
-          </button>
+          </motion.button>
         </motion.div>
       </motion.div>
     </motion.div>

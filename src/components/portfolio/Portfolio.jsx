@@ -1,0 +1,87 @@
+import {motion, useScroll,useSpring, useTransform} from 'framer-motion'
+import "./portfolio.scss"
+import { useRef } from 'react'
+
+const items = [
+    {
+        id:1,
+        title:"React Commerce",
+        img:"https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took ."
+    },
+    {
+        id:2,
+        title:"Chat App",
+        img:"https://media.istockphoto.com/id/1496991982/es/foto/hombre-de-negocios-sosteniendo-y-tocando-correos-electr%C3%B3nicos-flotantes-renderizado-3d.jpg?s=612x612&w=0&k=20&c=VcfgQqbyZziPeRRdYOU_fjne9YbsIq8wG0wNtU94qi4=",
+        desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took ."
+    },
+    {
+        id:3,
+        title:"mercaolibre Commerce",
+        img:"https://media.istockphoto.com/id/1198383207/es/foto/arreglo-manual-de-bloques-de-madera-apilamiento-con-el-icono-gr%C3%A1fico-y-s%C3%ADmbolo-del-carro-de-la.jpg?b=1&s=612x612&w=0&k=20&c=ipbuPwr5mjRUx2-m-C4uEX0bDoLByrebo4hujO74tko=",
+        desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took ."
+    },
+    {
+        id:4,
+        title:"peluditostrendy Commerce APP",
+        img:"https://images.pexels.com/photos/573293/pexels-photo-573293.jpeg?auto=compress&cs=tinysrgb&w=600",
+        desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took ."
+    }
+]
+
+const Single =({item}) => {
+    const ref = useRef()
+
+    const {scrollYProgress} = useScroll({
+        target:ref, 
+       // offset:["end end", "end start"]
+     });
+
+     const y = useTransform(scrollYProgress, [0,1], [-300, 300])
+
+    return(
+        <section >
+           <div className="container">
+            <div className="wrapper">
+             <div className="imageContainer" ref={ref}>
+               <img src={item.img} alt=''/>
+             </div>
+             <motion.div className="textContainer" style={{y:y}}>
+                <h2>{item.title}</h2>
+                <p>{item.desc}</p>
+                <motion.button whileTap={{scale:0.8}}>See Demo</motion.button>
+             </motion.div>
+            </div>
+           </div>
+        </section>
+    )
+}
+
+const Portfolio = () => {
+
+ const ref = useRef()
+
+ const {scrollYProgress} = useScroll({
+    target:ref, 
+    offset:["end end", "start start"]
+ });
+
+ const scaleX = useSpring (scrollYProgress,{
+    stiffness: 100,
+    damping: 30,
+ })  
+
+  return (
+    <div className='portfolio'  ref={ref}>
+        <div className="progress">
+          <h1>Featured Works</h1>
+          <motion.div style={{scaleX:scaleX}} className="progressBar"></motion.div>
+        </div>
+        {items.map(item => (
+          <Single item={item} key={item.id}/>
+        ))}
+    </div>
+  )
+}
+
+export default Portfolio
