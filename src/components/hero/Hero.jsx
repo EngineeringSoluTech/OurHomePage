@@ -67,7 +67,7 @@ const slideVariants = {
   },
 };
 
-const colors = ['#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#8B00FF'];
+const colors = ['#FFFF00','#0000FF', '#4B0082', '#8B00FF'];
 
 const Hero = () => {
   const [text, setText] = useState('');
