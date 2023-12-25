@@ -2,6 +2,29 @@ import { useRef } from 'react'
 import './parallax.scss'
 import {motion, useScroll, useTransform} from "framer-motion"
 
+
+const variants = {
+  initial: {
+    x: -500,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+  scrollButton: {
+    opacity: 0,
+    y: 10,
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+    },
+  },
+};
+
 const Parallax = ({type}) => {
 
     const ref = useRef()
@@ -29,6 +52,9 @@ const Parallax = ({type}) => {
          </motion.h1>
         <motion.div className="mountains"></motion.div>
         <motion.div 
+          variants={variants}
+          initial="initial"
+          whileInView="animate"
           className="planets"
           style={{y:yBg, backgroundImage: `url(${type==="services" ? "/planets.png" : "/sun.png"})`}}
           >

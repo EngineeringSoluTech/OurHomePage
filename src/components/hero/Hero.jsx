@@ -71,7 +71,7 @@ const colors = ['#FFFF00','#0000FF', '#4B0082', '#8B00FF'];
 
 const Hero = () => {
   const [text, setText] = useState('');
-  const phrases = ['EngineeringSoluTech', 'Good Ideas', 'Innovations Solutions'];
+  const phrases = ['EngineeringSoluTech', 'Good Ideas', 'Innovations Solutions', 'eficiency', 'Innovations Solutions'];
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [currentColorIndex, setCurrentColorIndex] = useState(0);
