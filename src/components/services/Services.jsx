@@ -27,7 +27,7 @@ function Services() {
 
   return (
     <motion.div
-       className='services' 
+       className='services'  
        variants={variants} 
        initial="initial" 
       //  animate="animate"

@@ -21,21 +21,19 @@ const App = () => {
       <NavBar/>
       <Hero/>
     </section>
-    <section 
-     id="Services"
-    >
+    <section id="Services">
       <Parallax type="services"/>
     </section>
-    <section >
+    <section id="About">
       <Services/>
     </section>
     <section id="Portfolio">
       <Parallax type="portfolio"/>
     </section>
 
-    <Portfolio/>
+     <Portfolio />
 
-    <section id="About">
+    <section id="Contact">
       <Contact/>
     </section>
     {/* <section id="End">
