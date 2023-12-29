@@ -5,9 +5,9 @@ const ToggleButtons= ({setOpen})=> {
   return (
     <button onClick={()=>setOpen((prev)=>!prev)}>
       <svg 
-         width={isMobile ? 15 : isTablet ? 18 : 23} 
+         width={isMobile ? 18 : isTablet ? 18 : 23} 
          height={isMobile ? 15 : isTablet ? 18 : 23} 
-         viewBox={isMobile ? "0 0 18 23" : isTablet ? "0 0 18 23" : "0 0 13 23"}
+         viewBox={isMobile ? "0 0 15 23" : isTablet ? "0 0 18 23" : "0 0 13 23"}
          >
         <motion.path 
            strokeWidth="3" 

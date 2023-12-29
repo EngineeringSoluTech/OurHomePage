@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Links from "./links/Links";
 import ToggleButton from "./toggleButton/ToggleButtons";
+import { isMobile, isTablet } from 'react-device-detect';
+
 import "./sidebar.scss";
 
 function Sidebar() {
@@ -11,13 +13,13 @@ function Sidebar() {
 
   const variants = {
     open: {
-      clipPath: "circle(1200px at 50px 50px)",
+      clipPath: isMobile ? "circle(1200px at 50px 50px)" : "circle(1200px at 50px 50px)",
       transition: {
         type: "spring",
       },
     },
     closed: {
-      clipPath: "circle(30px at 50px 50px)",
+      clipPath: isMobile ? "circle(15px at 30px 30px)": "circle(30px at 50px 50px)" ,
       transition: {
         delay: 0.5,
         type: "spring",
