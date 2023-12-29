@@ -43,10 +43,10 @@
     @include mobile {
       background-size: contain;
       background-repeat: no-repeat;
-      width: 50%;
+      width: 100%;
       height: 100%;
       position: absolute;
-      z-index: 2;
+      z-index: 4;
     }
   }
   .stars {
