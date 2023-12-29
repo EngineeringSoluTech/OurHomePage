@@ -25,7 +25,7 @@
     @include mobile {
       width: 100%;
       margin-left: 0;
-      gap: 1px;
+      gap: 10px;
       text-align: center;
       align-items: center;
       margin-top: 100px;
@@ -36,12 +36,11 @@
       line-height: 88px;
 
       @include mobile {
-        line-height: 30px;
+        line-height: 35px;
         width: 100%;
         margin-top: -50px;
         padding: 0;
-        font-size: 35px;
-        margin-bottom: 10px;
+        font-size: 45px;
       }
     }
 
@@ -73,7 +72,7 @@
     @include mobile {
       width: 100%;
       margin-right: 0;
-      margin-top: -140px;
+      margin-top: -150px;
     }
 
     .phoneSvg {
