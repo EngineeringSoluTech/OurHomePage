@@ -136,7 +136,7 @@ const Hero = () => {
         </motion.div>
         <motion.div
           className="cursor"
-          style={{ visibility: cursorVisibility, backgroundColor: 'white', height: '2px' }}
+          style={{ visibility: cursorVisibility, backgroundColor: 'yellow', height: '2px' }}
           variants={cursorVariants}
           initial="visible"
           animate={cursorVisibility}
