@@ -12,7 +12,7 @@ const textVariants = {
     opacity: 1,
     transition: {
       duration: 1,
-    },
+    }, 
   },
   scrollButton: {
     opacity: 0,
@@ -119,7 +119,7 @@ const Hero = () => {
             style={{ cursor: "pointer", color: currentColor }}
             whileHover={{ scale: 1.03 }}
           >
-            <motion.span style={{ display: 'inline-block' }} animate={{ opacity: 1 }}>
+            <motion.span style={{ display: 'inline' }} animate={{ opacity: 1 }}>
               {text}
             </motion.span>
           </motion.h2>
