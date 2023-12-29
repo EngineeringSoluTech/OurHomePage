@@ -15,47 +15,78 @@
   }
 
   .textContainer {
+    margin-left: 40px;
+    padding: 60px;
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 40px;
 
     @include mobile {
-      gap: 20px;
+      width: 100%;
+      margin-left: 0;
+      gap: 1px;
       text-align: center;
       align-items: center;
-      margin-top: 70px;
+      margin-top: 0;
     }
 
     h1 {
-      font-size: 100px;
+      font-size: 78px;
       line-height: 88px;
 
       @include mobile {
-        font-size: 36px;
+        line-height: 30px;
+        width: 100%;
+        margin-top: -50px;
+        padding: 0;
+        font-size: 25px;
+        margin-bottom: 10px;
       }
     }
 
-    span {
-      font-weight: 300;
+    .item{
+
+      h2{
+        font-size: 20px;
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+  
+      span {
+        font-size: 14px;
+        font-weight: 300px;
+        @include mobile {
+          font-size: 12px;
+        }
+      }
     }
   }
 
   .formContainer {
     flex: 1;
     position: relative;
+    padding: 50px;
+    margin-right: 50px;
     
     @include mobile {
-      padding: 50px;
       width: 100%;
+      margin-right: 0;
+      margin-top: -140px;
     }
-
 
     .phoneSvg {
       stroke: orange;
       position: absolute;
       margin: auto;
       z-index: -1;
+      
+      @include mobile {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 0px;
+      }
     }
 
     form {
@@ -63,8 +94,11 @@
       flex-direction: column;
       gap: 20px;
 
-      input,
-      textarea {
+      @include mobile {
+        gap: 10px;
+      }
+      
+      input, textarea {
         padding: 20px;
         background-color: transparent;
         border: 1px solid white;
@@ -72,7 +106,7 @@
         border-radius: 5px;
 
         @include mobile {
-          padding: 10px;
+          padding: 5px;
         }
       }
 

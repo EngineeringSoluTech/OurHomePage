@@ -1,12 +1,17 @@
 import {motion} from "framer-motion"
+import { isMobile, isTablet } from 'react-device-detect';
 
 const ToggleButtons= ({setOpen})=> {
   return (
     <button onClick={()=>setOpen((prev)=>!prev)}>
-      <svg width="23" height="23" viewBox="0 0 23 23">
+      <svg 
+         width={isMobile ? 15 : isTablet ? 18 : 23} 
+         height={isMobile ? 15 : isTablet ? 18 : 23} 
+         viewBox={isMobile ? "0 0 18 23" : isTablet ? "0 0 18 23" : "0 0 13 23"}
+         >
         <motion.path 
            strokeWidth="3" 
-           stroke="black" 
+           stroke={isMobile ? "gray" : isTablet ? "gray" : "black"} 
            strokeLinecap="round"
            variants={{
              closed: {d:"M 2 2.5 L 20 2.5"},
@@ -15,7 +20,7 @@ const ToggleButtons= ({setOpen})=> {
            />
         <motion.path 
           strokeWidth="3" 
-          stroke="black" 
+          stroke={isMobile ? "gray" : isTablet ? "gray" : "black"} 
           strokeLinecap="round"
           d="M 2 9.423 L 20 9.423"
           variants={{
@@ -25,7 +30,7 @@ const ToggleButtons= ({setOpen})=> {
           />
         <motion.path 
            strokeWidth="3" 
-           stroke="black" 
+           stroke={isMobile ? "gray" : isTablet ? "gray" : "black"}
            strokeLinecap="round"
 
            variants={{

@@ -52,5 +52,17 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+
+    @include mobile {
+      z-index: 999;
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      top: 35px;
+      left: 20px;
+      background-color: transparent;
+      border: none;
+     }
   }
 }
