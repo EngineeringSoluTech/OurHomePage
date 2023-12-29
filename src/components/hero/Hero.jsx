@@ -134,13 +134,14 @@ const Hero = () => {
           </motion.div>
           <motion.img variants={textVariants} animate="scrollButton" src='/scroll.png' alt='' />
         </motion.div>
-        <motion.div
+        {/* cursor parpadeante pero quedo horizontal */}
+        {/* <motion.div
           className="cursor"
           style={{ visibility: cursorVisibility, backgroundColor: 'yellow', height: '2px' }}
           variants={cursorVariants}
           initial="visible"
           animate={cursorVisibility}
-        />
+        /> */}
       </div>
       <motion.div className="slidingTextContainer"
         variants={slideVariants}
