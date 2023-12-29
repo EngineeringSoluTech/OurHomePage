@@ -40,7 +40,7 @@
         width: 100%;
         margin-top: -50px;
         padding: 0;
-        font-size: 25px;
+        font-size: 35px;
         margin-bottom: 10px;
       }
     }
@@ -48,14 +48,14 @@
     .item{
 
       h2{
-        font-size: 20px;
+        font-size: 25px;
         @include mobile {
           font-size: 14px;
         }
       }
   
       span {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 300px;
         @include mobile {
           font-size: 12px;
