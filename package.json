@@ -10,8 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^1.0.28",
+    "framer-motion": "^10.16.4",
     "react": "^18.2.0",
+    "react-device-detect": "^2.2.3",
     "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.5.3",
     "react-router-dom": "^6.20.1",
     "sass": "^1.68.0"
   },
