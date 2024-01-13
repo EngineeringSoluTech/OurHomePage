@@ -158,7 +158,6 @@ const Hero = () => {
         >
       <Spline scene="https://prod.spline.design/vDsaW2raCsstKTEz/scene.splinecode" />
        {/* <img src="/foto.png" alt='' /> */}
-       {/* <div class="sketchfab-embed-wrapper"> <iframe title="3D Icon Website" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/c4da3a51a00046babda705206f6fbc07/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/3d-icon-website-c4da3a51a00046babda705206f6fbc07?utm_medium=embed&utm_campaign=share-popup&utm_content=c4da3a51a00046babda705206f6fbc07" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> 3D Icon Website </a> by <a href="https://sketchfab.com/Hisam.Saputra?utm_medium=embed&utm_campaign=share-popup&utm_content=c4da3a51a00046babda705206f6fbc07" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Hisam Saputra </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=c4da3a51a00046babda705206f6fbc07" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div> */}
       </div>
     </div>
   );

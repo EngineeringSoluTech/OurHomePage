@@ -56,7 +56,12 @@ const Parallax = ({type}) => {
           initial="initial"
           whileInView="animate"
           className="planets"
-          style={{y:yBg, backgroundImage: `url(${type==="services" ? "/planet1.png" : "/sun.png"})`}}
+          // style={{y:yBg, backgroundImage: `url(${type==="services" ? "/planet1.png" : "/sun.png"})`}}
+          style={{y:yBg, backgroundImage: `url(${type==="services" ?     
+          <Spline scene="Loading..." />
+          : 
+          "/sun.png"})`
+        }}
           >
         </motion.div>
         <motion.div className="stars"></motion.div>
