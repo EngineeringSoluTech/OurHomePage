@@ -154,7 +154,7 @@ const Hero = () => {
         variants={imageVariants}
         initial="initial"
         animate="animate">
-        <img src="/foto.png" alt='' />
+       // <img src="/foto.png" alt='' />
       </motion.div>
     </div>
   );
