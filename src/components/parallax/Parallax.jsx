@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+import Spline from '@splinetool/react-spline';
 import './parallax.scss'
 import {motion, useScroll, useTransform} from "framer-motion"
 
