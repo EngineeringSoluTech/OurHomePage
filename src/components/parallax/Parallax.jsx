@@ -59,7 +59,7 @@ const Parallax = ({type}) => {
           className="planets"
           // style={{y:yBg, backgroundImage: `url(${type==="services" ? "/planet1.png" : "/sun.png"})`}}
           style={{y:yBg, backgroundImage: `url(${type==="services" ?     
-          <Spline scene="Loading..." />
+          <Spline scene="https://prod.spline.design/aZgcMPAq9EXKsM2b/scene.splinecode" />
           : 
           "/sun.png"})`
         }}
