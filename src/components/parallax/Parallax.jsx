@@ -57,11 +57,11 @@ const Parallax = ({type}) => {
           initial="initial"
           whileInView="animate"
           className="planets"
-          // style={{y:yBg, backgroundImage: `url(${type==="services" ? "/planet1.png" : "/sun.png"})`}}
-          style={{y:yBg, backgroundImage: `url(${type==="services" ?     
-          <Spline scene="https://prod.spline.design/aZgcMPAq9EXKsM2b/scene.splinecode" />
-          : 
-          "/sun.png"})`
+           style={{y:yBg, backgroundImage: `url(${type==="services" ? "/planet1.png" : "/sun.png"})`}}
+          // style={{y:yBg, backgroundImage: `url(${type==="services" ?     
+          // <Spline scene="https://prod.spline.design/aZgcMPAq9EXKsM2b/scene.splinecode" />
+          // : 
+          // "/sun.png"})`
         }}
           >
         </motion.div>
