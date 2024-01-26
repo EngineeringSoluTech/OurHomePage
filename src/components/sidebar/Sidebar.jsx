@@ -19,7 +19,7 @@ function Sidebar() {
       },
     },
     closed: {
-      clipPath: isMobile ? "circle(15px at 30px 30px)": "circle(30px at 50px 50px)" ,
+      clipPath: isMobile ? "circle(15px at 30px 30px)": "circle(25px at 53px 47px)" ,
       transition: {
         delay: 0.5,
         type: "spring",
