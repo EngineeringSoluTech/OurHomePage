@@ -4,7 +4,7 @@ import { useRef } from 'react'
 
 const items = [
     {
-        id:1,
+        id:1, 
         title:"React Commerce",
         img:"https://images.pexels.com/photos/67112/pexels-photo-67112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took ."
@@ -67,7 +67,7 @@ const Portfolio = () => {
  });
 
  const scaleX = useSpring (scrollYProgress,{
-    stiffness: 100,
+    stiffness: 100, 
     damping: 10,
  })  
 

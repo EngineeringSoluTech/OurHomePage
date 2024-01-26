@@ -18,6 +18,7 @@
       flex-direction: column;
       justify-content: center;
       gap: 40px;
+      margin-left: 50px;
 
       @include mobile {
         height: 50%;
@@ -40,7 +41,7 @@
       }
 
       h1 {
-        font-size: 88px;
+        font-size: 60px;
 
         @include mobile {
           font-size: 34px;
@@ -72,6 +73,9 @@
     position: absolute;
     top: 0;
     right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @include mobile {
       height: 50%;
@@ -81,7 +85,7 @@
     }
 
     img{
-      width: 100%;
+      width: 80%;
       height: 100%;
       object-fit: cover;
     }
@@ -90,7 +94,7 @@
   .slidingTextContainer {
     position: absolute;
     font-size: 50vh;
-    bottom: -120px;
+    bottom: -85px;
     white-space: nowrap;
     color: #ffffff09;
     width: 50%;

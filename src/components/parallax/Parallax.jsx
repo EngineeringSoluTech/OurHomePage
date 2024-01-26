@@ -62,7 +62,6 @@ const Parallax = ({type}) => {
           // <Spline scene="https://prod.spline.design/aZgcMPAq9EXKsM2b/scene.splinecode" />
           // : 
           // "/sun.png"})`
-        }}
           >
         </motion.div>
         <motion.div className="stars"></motion.div>

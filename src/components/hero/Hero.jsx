@@ -72,7 +72,7 @@ const colors = ['#FFFF00','#0000FF', '#4B0082', '#8B00FF'];
 
 const Hero = () => {
   const [text, setText] = useState('');
-  const phrases = ['EngineeringSoluTech', 'Good Ideas', 'Innovations Solutions', 'eficiency', 'Innovations Solutions'];
+  const phrases = ['EngineeringSoluTech', 'Good Ideas', 'Innovations Solutions', 'Eficiency', 'Innovations Solutions'];
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [currentColorIndex, setCurrentColorIndex] = useState(0);
@@ -149,15 +149,16 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        Write Us for your services
+        Contact Us for services
       </motion.div>
       <div className="imageContainer"
-        // variants={imageVariants}
-        // initial="initial"
-        // animate="animate"
+        variants={imageVariants}
+        initial="initial"
+        animate="animate"
         >
-      <Spline scene="https://prod.spline.design/vDsaW2raCsstKTEz/scene.splinecode" />
+       {/* <Spline scene="https://prod.spline.design/vDsaW2raCsstKTEz/scene.splinecode" /> */}
        {/* <img src="/foto.png" alt='' /> */}
+       <img src="/webdesign.png" alt='' />
       </div>
     </div>
   );
