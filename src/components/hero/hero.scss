@@ -21,11 +21,15 @@
       margin-left: 50px;
 
       @include mobile {
-        height: 50%;
+        height: 80%;
         width: 100%;
         gap: 20px;
+        display: flex;
         align-items: center;
         text-align: center;
+        margin-left: 0px;
+        padding: 10px;
+
       }
 
       h2 {
@@ -34,7 +38,7 @@
         letter-spacing: 10px;
 
         @include mobile {
-          margin-top: 5px;
+          margin-top: 55px;
           font-size: 25px;
           letter-spacing: 5px;
         }
@@ -88,6 +92,10 @@
       width: 70%;
       height: 90%;
       object-fit: cover;
+
+      @include mobile {
+        display: none;
+      }
     }
   }
 

@@ -150,7 +150,7 @@ const Hero = () => {
         animate="animate"
       >
         Contact Us for services
-      </motion.div>
+      </motion.div> 
       <div className="imageContainer"
         variants={imageVariants}
         initial="initial"
