@@ -107,5 +107,15 @@
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
+
+    @include mobile {
+      position: absolute;
+      font-size: 27vh;
+      bottom: -35px;
+      white-space: nowrap;
+      color: #ffffff09;
+      width: 50%;
+      font-weight: bold;
+    }
   }
 }
