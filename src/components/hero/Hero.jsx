@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Spline from '@splinetool/react-spline';
+import { isMobile, isTablet } from 'react-device-detect';
+
 import "./hero.scss";
 
 const textVariants = {
@@ -63,7 +65,7 @@ const slideVariants = {
     transition: {
       repeat: Infinity,
       repeatType: "mirror",
-      duration: 15,
+      duration: isMobile ? 5:15,
     },
   },
 };
