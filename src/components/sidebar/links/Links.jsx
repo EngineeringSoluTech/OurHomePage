@@ -1,5 +1,7 @@
 import {motion} from 'framer-motion'
 
+import Sidebar from '../Sidebar'
+
 
 const variants = {
   open:{
@@ -24,7 +26,11 @@ const itemVariants = {
   }
 }
 
-const Links=()=> {
+const Links=({ setOpenLink })=> {
+
+  const handleClickClose = () => {
+    setOpenLink(false);
+  };
 
   const items = [
     "Homepage",
@@ -42,6 +48,7 @@ const Links=()=> {
              variants={itemVariants} 
              whileHover={{scale:1.1}} 
              whileTap={{scale:0.95}}
+             onClick={handleClickClose}
              >
             {item}
           </motion.a>

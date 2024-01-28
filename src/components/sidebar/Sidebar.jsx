@@ -6,7 +6,8 @@ import { isMobile, isTablet } from 'react-device-detect';
 
 import "./sidebar.scss";
 
-function Sidebar() {
+function Sidebar(setOpenLink) {
+  console.log("setopne:", setOpenLink.value);
   const [open, setOpen] = useState(false);
   const controls = useAnimation();
   const sidebarRef = useRef(null);
@@ -53,7 +54,7 @@ function Sidebar() {
   return (
     <motion.div className="sidebar" animate={controls} ref={sidebarRef}>
       <motion.div className="bg" variants={variants}>
-        <Links />
+        <Links setOpenLink={setOpen}/>
       </motion.div>
       <ToggleButton setOpen={toggleSidebar} />
     </motion.div>
