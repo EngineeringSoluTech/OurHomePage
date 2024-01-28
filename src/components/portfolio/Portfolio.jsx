@@ -25,7 +25,8 @@ const items = [
         id:4,
         title:"peluditostrendy Commerce APP",
         img:"https://images.pexels.com/photos/573293/pexels-photo-573293.jpeg?auto=compress&cs=tinysrgb&w=600",
-        desc:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took ."
+        desc:"Tienda de mascota con carrito de compras y pasarela de pagos, permite visualizar varios modelos y agregar productos al carrito, permite interaccion por comentarios tipo red social.",
+        url:"https://peluditostrendyambientepruebas.netlify.app/"
     }
 ]
 

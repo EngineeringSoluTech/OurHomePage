@@ -1,6 +1,8 @@
 import './services.scss'
+import Swal from 'sweetalert2'
 import {motion, useInView} from "framer-motion"
 import { useRef } from 'react';
+
 
 const variants ={
   initial:{
@@ -20,6 +22,19 @@ const variants ={
 }
 
 function Services() {
+
+  const ButtonClickWhatWeDo =()=>{
+    Swal.fire({
+      title: "Soluciones Eficientes!",
+      text: "Hacemos eficiente y mas productivo todo en tu empresa o negocio, con soluciones tecnologicas de gran impacto",
+      imageUrl: "https://dresma.ai/wp-content/uploads/2022/01/mern-stack-developer.gif",
+      confirmButtonText:"Genial !",
+      imageWidth: 400,
+      imageHeight: 280,
+      imageAlt: "Custom image",
+      // background:"transparent"
+    });
+  }
 
   const ref = useRef();
 
@@ -59,7 +74,11 @@ function Services() {
               }}>For Your
             </motion.b> Bussines.
           </h1>
-          <motion.button whileTap={{scale:0.95}} whileHover={{scale:1.05}}>
+          <motion.button 
+            whileTap={{scale:0.95}} 
+            whileHover={{scale:1.05}}
+            onClick={ButtonClickWhatWeDo}
+            >
             What We Do ?
           </motion.button>
         </div>
