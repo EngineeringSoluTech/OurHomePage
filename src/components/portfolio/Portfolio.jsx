@@ -1,3 +1,4 @@
+import React from 'react';
 import {motion, useScroll,useSpring, useTransform} from 'framer-motion'
 import "./portfolio.scss"
 import { useRef } from 'react'
@@ -24,7 +25,7 @@ const items = [
     {
         id:4,
         title:"peluditostrendy Commerce APP",
-        img:"https://images.pexels.com/photos/573293/pexels-photo-573293.jpeg?auto=compress&cs=tinysrgb&w=600",
+        img:"/peluditostrendy.PNG",
         desc:"Tienda de mascota con carrito de compras y pasarela de pagos, permite visualizar varios modelos y agregar productos al carrito, permite interaccion por comentarios tipo red social.",
         url:"https://peluditostrendyambientepruebas.netlify.app/"
     }
@@ -32,6 +33,11 @@ const items = [
 
 const Single =({item}) => {
     const ref = useRef()
+
+    const handleSeeDemoClick = (link) => {
+      // window.location.href = link;
+      window.open(link, '_blank'); // abre en una pestaña nueva
+    };
 
     const {scrollYProgress} = useScroll({
         target:ref, 
@@ -45,12 +51,22 @@ const Single =({item}) => {
            <div className="container">
             <div className="wrapper">
              <div className="imageContainer" ref={ref}>
-               <img src={item.img} alt=''/>
+             {item.img.startsWith('http') ? (
+              <img src={item.img} alt='' />
+               ) : (
+              <img src={item.img} alt='' />
+               )}            
              </div>
              <motion.div className="textContainer" style={{y:y}}>
                 <h2>{item.title}</h2>
                 <p>{item.desc}</p>
-                <motion.button whileTap={{scale:0.8}}>See Demo</motion.button>
+                <motion.button 
+                  whileTap={{scale:0.8}} 
+                  whileHover={{scale:1.1}}
+                  onClick={()=>handleSeeDemoClick(item.url)}
+                  >
+                    See Demo
+                </motion.button>
              </motion.div>
             </div>
            </div>

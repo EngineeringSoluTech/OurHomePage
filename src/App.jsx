@@ -2,18 +2,22 @@
 import React, { useEffect } from 'react';
 import {motion} from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom'
 
 import Test from "./Test";
-import "./app.scss"
+import End from "./components/end/End";
 import Hero from "./components/hero/Hero";
 import NavBar from "./components/navbar/NavBar";
 import Parallax from "./components/parallax/Parallax";
 import Services from "./components/services/Services";
-import End from "./components/end/End";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
+import TransitionPageExample from "./pages/transitionPageExample"
 
+import "./app.scss"
 const App = () => {
+
+  // const location = useLocation();
 
   return (
   <div>
@@ -30,9 +34,7 @@ const App = () => {
     <section id="Portfolio">
       <Parallax type="portfolio"/>
     </section>
-
      <Portfolio />
-
     <section id="Contact">
       <Contact/>
     </section>
@@ -40,6 +42,13 @@ const App = () => {
       <End/>
     </section> */}
     {/* <Test/> */}
+
+    <Router>
+      {/* <NavBar/> */}
+      <Routes>
+        <Route path='/example' element={<TransitionPageExample />}/>
+      </Routes>
+    </Router>
   </div>
   )
 };
