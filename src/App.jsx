@@ -12,7 +12,7 @@ import Parallax from "./components/parallax/Parallax";
 import Services from "./components/services/Services";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
-import TransitionPageExample from "./pages/transitionPageExample"
+import TransitionPageExample from "./pages/TransitionPageExample"
 
 import "./app.scss"
 const App = () => {
